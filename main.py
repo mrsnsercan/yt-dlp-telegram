@@ -34,7 +34,7 @@ def test(message):
 def download_video(message, url, audio=False, format_id="mp4"):
     url_info = urlparse(url)
     if url_info.scheme:
-        if url_info.netloc in ['www.youtube.com', 'youtu.be', 'youtube.com', 'youtu.be']:
+        if url_info.netloc in ['www.youtube.com', 'youtu.be', 'youtube.com', 'youtu.be','filemoon.sx']:
             if not youtube_url_validation(url):
                 bot.reply_to(message, 'Invalid URL')
                 return
